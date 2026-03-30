@@ -1,0 +1,12 @@
+# AWS region 
+aws_region = "us-east-1"
+
+# Your public IP address – ONLY this IP can SSH to the Bastion host
+# Find yours with: curl -s ifconfig.me
+my_ip = "YOUR_IP_ADDRESS/32"
+
+# Name of the EC2 Key Pair (must already exist in your AWS account)
+key_name = "YOUR_KEYPAIR"
+
+web_admin_password = "YOUR_WEBSEVER_PASSWORD"
+db_admin_password  = "YOUR_DATABASE_PASSWORD"
