@@ -154,6 +154,19 @@ CREATE DATABASE techcorp_db;
 \q              -- Quit psql
 ```
 
+### Exporting Terraform State to s3 Bucket
+
+```bash
+aws s3 mb s3://techcorp-state-bkt --region us-east-1
+terraform init
+terraform apply
+```
+
+### Copy existing terraform state file to s3 bucket
+```bash
+aws s3 cp terraform.tfstate s3://techcorp-state-bkt/terraform/backend/terraform.tfstate
+```
+
 ## Evidence
 
 ```bash
